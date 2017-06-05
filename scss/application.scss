@@ -75,7 +75,7 @@ p, ul, ol {
  border-bottom: 1px solid $border;
  .name {
    font-weight: 700;
-   font-size: .8em;
+   font-size: 1.5em;
    letter-spacing: 4px;
    text-transform: uppercase;
    border: 2px solid $border;
@@ -116,6 +116,52 @@ nav {
 	     color: $highlight;
 	  }
 	}
+
+	ul
+	{
+	  display: flex;
+	  text-align: center;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform:translate(-50%,-50%);
+	}
+
+	ul li {
+     background: #000;
+     margin: 10px;
+     list-style: none;
+     font-size: 24px;
+     transition: 5s;
+	}
+
+	ul li a {
+       width: 60px;
+       padding: 16px 0;
+       display: block;
+       color: #fff;
+	}
+
+	ul li:nth-child(1)
+	{
+	   background: #3b5998;
+	}
+	ul li:nth-child(2)
+	{
+	   background: #00aced;
+	}
+	ul li:nth-child(3)
+	{
+	   background: #007bb6;
+	}
+
+	ul li:hover 
+	{
+	    transform: translateY(-8px);
+	    box-shadow:0 10px 10px rgba(0,0,0,.5);
+	}
+
+
 }
 }
 @import 'welcome.scss';
