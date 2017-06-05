@@ -98,6 +98,24 @@ p, ul, ol {
 
 }
 
+#main_footer {
+	padding:2.5em 5%;
+	border-top: 1px solid $border;
+	.copyright {
+	   float: left;
+	   font-size: .9em;
+	   margin: 0;
+	}
+nav {
+	float: right;
+	i {
+	  color: $dark;
+	  margin-left: 1em;
+	  padding-top: .2em;
+	  &:hover {
+	     color: $highlight;
+	  }
+	}
 
 	ul
 	{
@@ -141,10 +159,10 @@ p, ul, ol {
 	{
 	    transform: translateY(-8px);
 	    box-shadow:0 10px 10px rgba(0,0,0,.5);
-	
+	}
 
 
-
+}
 }
 @import 'welcome.scss';
 	
